@@ -13,6 +13,7 @@ namespace ScrubScores
             {
                 Usage();
                 Console.ReadLine();
+                return;
             }
             var success = new Scrubber().ScrubDirectoryPath(args[0]);
             if (!success) Console.ReadLine();
